@@ -10,9 +10,9 @@ app = FastAPI()
 # CORS config so frontend can talk to backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Replace with frontend URL in production
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=["github.com/Cartoon34"],  # Replace with frontend URL in production
+    allow_methods=["github.com/Cartoon34"],
+    allow_headers=["github.com/Cartoon34"],
 )
 
 @app.post("/chat")
